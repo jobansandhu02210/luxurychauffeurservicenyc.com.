@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Quote | Eagle Eye Chauffeur | Point to Point, Hourly, Airport</title>
+    <meta name="description" content="Book your chauffeur with Eagle Eye. Point to point, hourly, or airport transfer. Select vehicle, enter trip details, get an instant quote. Reserve online 24/7.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://luxurychauffeurservicenyc.com/book.html">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">EE</span>
+                    <span class="logo-text">Eagle Eye<br><small>Chauffeur</small></span>
+                </a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="airport-transfers-nyc.html">Airport Transfers</a></li>
+                            <li><a href="corporate-chauffeur-nyc.html">Corporate Service</a></li>
+                            <li><a href="hourly-chauffeur-nyc.html">Hourly Chauffeur</a></li>
+                            <li><a href="events-chauffeur-nyc.html">Events & Weddings</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="fleet.html" class="nav-link">Our Fleet</a></li>
+                    <li><a href="areas-served.html" class="nav-link">Areas Served</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="book.html" class="nav-link active">Book Now</a></li>
+                </ul>
+                
+                <div class="nav-contact">
+                    <a href="tel:+15557891234" class="phone-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>+1 (555) 789-1234</span>
+                    </a>
+                    <a href="book.html" class="btn btn-primary">Request Quote</a>
+                </div>
+                
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Request a Quote</span>
+            </nav>
+            <h1>Request a Quote</h1>
+            <p>Enter your trip details below. Choose service type and vehicle, then receive an instant estimated price. We will confirm your reservation by email or phone.</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="section booking-section" id="booking-section">
+        <div class="container">
+            <!-- Step indicator (visual only) -->
+            <div class="booking-steps" aria-hidden="true">
+                <div class="booking-step-item done">
+                    <span class="booking-step-num">1</span>
+                    <span class="booking-step-label">Trip</span>
+                </div>
+                <div class="booking-step-line"></div>
+                <div class="booking-step-item done">
+                    <span class="booking-step-num">2</span>
+                    <span class="booking-step-label">Vehicle</span>
+                </div>
+                <div class="booking-step-line"></div>
+                <div class="booking-step-item done">
+                    <span class="booking-step-num">3</span>
+                    <span class="booking-step-label">Date & Time</span>
+                </div>
+                <div class="booking-step-line"></div>
+                <div class="booking-step-item done">
+                    <span class="booking-step-num">4</span>
+                    <span class="booking-step-label">Your Details</span>
+                </div>
+            </div>
+
+            <div class="booking-layout">
+                <!-- Main Form Column -->
+                <div class="booking-main">
+                    <form id="booking-form" class="booking-form-card" novalidate>
+                        <!-- Step 1: Service type -->
+                        <div class="form-section form-section-step">
+                            <h2 class="form-section-title">1. Service type</h2>
+                            <div class="booking-tabs" role="tablist">
+                                <button type="button" class="booking-tab active" data-tab="point-to-point" role="tab" aria-selected="true">Point to Point</button>
+                                <button type="button" class="booking-tab" data-tab="hourly" role="tab" aria-selected="false">Hourly</button>
+                                <button type="button" class="booking-tab" data-tab="airport" role="tab" aria-selected="false">Airport Transfer</button>
+                            </div>
+
+                            <div id="panel-point-to-point" class="booking-panel active">
+                                <div class="form-group">
+                                    <label for="pickup-address">Pickup address <span class="required">*</span></label>
+                                    <input type="text" id="pickup-address" name="pickup_address" placeholder="Street address, city" autocomplete="off" required>
+                                    <span class="input-hint">Start typing for suggestions (US addresses)</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dropoff-address">Drop-off address <span class="required">*</span></label>
+                                    <input type="text" id="dropoff-address" name="dropoff_address" placeholder="Street address, city" autocomplete="off" required>
+                                </div>
+                                <input type="hidden" id="pickup-lat" name="pickup_lat">
+                                <input type="hidden" id="pickup-lng" name="pickup_lng">
+                                <input type="hidden" id="dropoff-lat" name="dropoff_lat">
+                                <input type="hidden" id="dropoff-lng" name="dropoff_lng">
+                            </div>
+
+                            <div id="panel-hourly" class="booking-panel">
+                                <div class="form-group">
+                                    <label for="hourly-pickup">Pickup location <span class="required">*</span></label>
+                                    <input type="text" id="hourly-pickup" name="hourly_pickup" placeholder="Street address, city" autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="hourly-duration">Duration <span class="required">*</span></label>
+                                    <select id="hourly-duration" name="hourly_duration">
+                                        <option value="3">3 hours (minimum)</option>
+                                        <option value="4">4 hours</option>
+                                        <option value="5">5 hours</option>
+                                        <option value="6">6 hours</option>
+                                        <option value="8">8 hours</option>
+                                        <option value="10">10 hours</option>
+                                        <option value="12">12 hours</option>
+                                    </select>
+                                </div>
+                                <input type="hidden" id="hourly-pickup-lat" name="hourly_pickup_lat">
+                                <input type="hidden" id="hourly-pickup-lng" name="hourly_pickup_lng">
+                            </div>
+
+                            <div id="panel-airport" class="booking-panel">
+                                <div class="form-group">
+                                    <label for="airport-direction">Direction</label>
+                                    <select id="airport-direction" name="airport_direction">
+                                        <option value="to_airport">To airport (drop-off at airport)</option>
+                                        <option value="from_airport">From airport (pickup at airport)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" id="airport-address-group">
+                                    <label for="airport-other-address">Address (city or hotel) <span class="required">*</span></label>
+                                    <input type="text" id="airport-other-address" name="airport_other_address" placeholder="Street address or hotel name" autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="airport-select">Airport</label>
+                                    <select id="airport-select" name="airport">
+                                        <option value="JFK">JFK International Airport</option>
+                                        <option value="LGA">LaGuardia Airport</option>
+                                        <option value="EWR">Newark Liberty International</option>
+                                        <option value="TEB">Teterboro Airport</option>
+                                        <option value="HPN">Westchester County Airport</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="flight-number">Flight number (optional)</label>
+                                    <input type="text" id="flight-number" name="flight_number" placeholder="e.g. AA 123" autocomplete="off">
+                                    <span class="input-hint">We track flights for on-time pickup.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Vehicle -->
+                        <div class="form-section form-section-step">
+                            <h2 class="form-section-title">2. Vehicle</h2>
+                            <div class="fleet-options">
+                                <label class="fleet-option">
+                                    <input type="radio" name="fleet" value="business_sedan" checked>
+                                    <span class="fleet-option-content">
+                                        <span class="fleet-name">Business Sedan</span>
+                                        <span class="fleet-desc">Mercedes E-Class · $8/mile · Up to 3 passengers</span>
+                                    </span>
+                                </label>
+                                <label class="fleet-option">
+                                    <input type="radio" name="fleet" value="business_suv">
+                                    <span class="fleet-option-content">
+                                        <span class="fleet-name">Business SUV</span>
+                                        <span class="fleet-desc">Chevrolet Suburban · $10/mile · Up to 6 passengers</span>
+                                    </span>
+                                </label>
+                                <label class="fleet-option">
+                                    <input type="radio" name="fleet" value="first_class_suv">
+                                    <span class="fleet-option-content">
+                                        <span class="fleet-name">First Class SUV</span>
+                                        <span class="fleet-desc">Cadillac Escalade · $12/mile · Up to 6 passengers</span>
+                                    </span>
+                                </label>
+                                <label class="fleet-option">
+                                    <input type="radio" name="fleet" value="first_class_sedan">
+                                    <span class="fleet-option-content">
+                                        <span class="fleet-name">First Class Sedan</span>
+                                        <span class="fleet-desc">Mercedes S-Class · $16/mile · Up to 3 passengers</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Date & Time -->
+                        <div class="form-section form-section-step">
+                            <h2 class="form-section-title">3. Date & time</h2>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="trip-date">Date <span class="required">*</span></label>
+                                    <input type="date" id="trip-date" name="trip_date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="trip-time">Time <span class="required">*</span></label>
+                                    <input type="time" id="trip-time" name="trip_time" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Your details -->
+                        <div class="form-section form-section-step">
+                            <h2 class="form-section-title">4. Your details</h2>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="book-name">Full name <span class="required">*</span></label>
+                                    <input type="text" id="book-name" name="name" required placeholder="As on ID">
+                                </div>
+                                <div class="form-group">
+                                    <label for="book-phone">Phone <span class="required">*</span></label>
+                                    <input type="tel" id="book-phone" name="phone" required placeholder="+1 (555) 000-0000">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="book-email">Email <span class="required">*</span></label>
+                                <input type="email" id="book-email" name="email" required placeholder="you@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="book-notes">Special requests</label>
+                                <textarea id="book-notes" name="notes" rows="3" placeholder="Flight number, luggage, meet-and-greet instructions, etc."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit-booking">
+                                <span class="btn-text">Request quote & reserve</span>
+                            </button>
+                            <p class="form-disclaimer">By submitting you agree to receive a confirmation by email or phone. Final price may include tolls, parking, or gratuity; we will confirm before charging.</p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Price Summary Sidebar -->
+                <aside class="booking-sidebar">
+                    <div class="price-summary-card" id="price-summary-card">
+                        <h3>Quote summary</h3>
+                        <div class="price-summary-row">
+                            <span>Service</span>
+                            <span id="summary-service">Point to Point</span>
+                        </div>
+                        <div class="price-summary-row">
+                            <span>Vehicle</span>
+                            <span id="summary-vehicle">Business Sedan (Mercedes E-Class)</span>
+                        </div>
+                        <div class="price-summary-row summary-miles" id="summary-miles-row" style="display: none;">
+                            <span>Distance</span>
+                            <span id="summary-miles">—</span>
+                        </div>
+                        <div class="price-summary-row summary-duration" id="summary-duration-row" style="display: none;">
+                            <span>Duration</span>
+                            <span id="summary-duration">—</span>
+                        </div>
+                        <div class="price-summary-divider"></div>
+                        <div class="price-summary-total">
+                            <span>Estimated total</span>
+                            <span id="summary-total">$—</span>
+                        </div>
+                        <p class="price-disclaimer">Fixed airport rates shown when airport is selected. Point-to-point and hourly are estimates; we will confirm before booking.</p>
+                    </div>
+
+                    <div class="sidebar-cta">
+                        <p>Prefer to book by phone?</p>
+                        <a href="tel:+15557891234" class="btn btn-outline btn-block">+1 (555) 789-1234</a>
+                        <p class="sidebar-email"><a href="mailto:info@eagleeyechauffeur.com">info@eagleeyechauffeur.com</a></p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmation message (hidden by default) -->
+    <div class="booking-confirmation" id="booking-confirmation" aria-live="polite" tabindex="-1" hidden>
+        <div class="container">
+            <div class="confirmation-card">
+                <div class="confirmation-icon" aria-hidden="true">✓</div>
+                <h2>Request received</h2>
+                <p>Thank you. We have received your booking request and will confirm your reservation shortly by email or phone.</p>
+                <div class="confirmation-details" id="confirmation-details"></div>
+                <a href="index.html" class="btn btn-primary">Back to home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">EE</span>
+                        <span class="logo-text">Eagle Eye<br><small>Chauffeur</small></span>
+                    </a>
+                    <p>Premium chauffeur and black car service. Corporate transportation, airport transfers, and special occasions.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="airport-transfers-nyc.html">Airport Transfers</a></li>
+                        <li><a href="corporate-chauffeur-nyc.html">Corporate Service</a></li>
+                        <li><a href="hourly-chauffeur-nyc.html">Hourly Chauffeur</a></li>
+                        <li><a href="events-chauffeur-nyc.html">Events & Weddings</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <address>
+                        <p><strong>Eagle Eye Chauffeur</strong></p>
+                        <p><a href="tel:+15557891234">+1 (555) 789-1234</a></p>
+                        <p><a href="mailto:info@eagleeyechauffeur.com">info@eagleeyechauffeur.com</a></p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Eagle Eye Chauffeur. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/booking.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
